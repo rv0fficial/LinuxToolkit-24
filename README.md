@@ -4,59 +4,59 @@
 
 ---
 
-- [Linux Commands](#linux-commands)
-  - [Useful Linux commands](#useful-linux-commands)
-  - [Linux Files Types](#linux-files-types)
-  - [Terminal](#terminal)
-  - [File Navigation System](#file-navigation-system)
-  - [Linux sub directories](#linux-sub-directories)
-  - [ls command and its options](#ls-command-and-its-options)
-  - [Creation of directories](#creation-of-directories)
-  - [Removing directories rm and rmdir commands](#removing-directories-rm-and-rmdir-commands)
-  - [Copying moving and renaiming files and directories](#copying-moving-and-renaiming-files-and-directories)
-  - [Creation of files using cat touch gedit and vi](#creation-of-files-using-cat-touch-gedit-and-vi)
-  - [View files contents using cat tac rev head and tail](#view-files-contents-using-cat-tac-rev-head-and-tail)
-  - [View files content using less and more](#view-files-content-using-less-and-more)
-  - [Creation of hidden files and directories](#creation-of-hidden-files-and-directories)
-  - [Copying moving and renaiming files and directories using cp and mv commands (2)](#copying-moving-and-renaiming-files-and-directories-using-cp-and-mv-commands-2)
-  - [Comparing content of files (diff sdiff...)](#comparing-content-of-files-diff-sdiff)
-  - [Soft and hard link](#soft-and-hard-link)
-  - [Sort commands](#sort-commands)
-  - [Uniq commands](#uniq-commands)
-  - [Input and Output](#input-and-output)
-  - [Redirecting stdInput stdOutput and stdError](#redirecting-stdinput-stdoutput-and-stderror)
-  - [Piping](#piping)
-  - [Execute multiple command](#execute-multiple-command)
-  - [Commands aliasing](#commands-aliasing)
-  - [Regular expressions](#regular-expressions)
-  - [locate](#locate)
-  - [find command](#find-command)
-  - [Compression and uncompression of files (episode 33)](#compression-and-uncompression-of-files-episode-33)
-      - [Creation of archive files](#creation-of-archive-files)
-      - [Apply compression algorithm on archive files (gzip bzip2)](#apply-compression-algorithm-on-archive-files-gzip-bzip2)
-  - [grep command](#grep-command)
-  - [Regular expressions patterns](#regular-expressions-patterns)
-      - [Character Patterns](#character-patterns)
-      - [Word Patterns](#word-patterns)
-      - [Line Patterns](#line-patterns)
-      - [Additional Patterns available only when using the egrep command](#additional-patterns-available-only-when-using-the-egrep-command)
-  - [The cut command](#the-cut-command)
-  - [The Linux File Permissions Concept](#the-linux-file-permissions-concept)
-      - [User categories](#user-categories)
-      - [Permission types](#permission-types)
-      - [Operations allowed related permissions](#operations-allowed-related-permissions)
-      - [Users and groups](#users-and-groups)
-      - [Umask](#umask)
-  - [Working with editors](#working-with-editors)
-  - [Stackoverflow questions](#stackoverflow-questions)
-  - [Checking Resource Usage](#checking-resource-usage)
-  - [Managing systemd units](#managing-systemd-units)
-  - [Viewing Logs](#viewing-logs)
-  - [Managing users](#managing-users)
-  - [SSH](#ssh)
-  - [Bash history](#bash-history)- 
-  - [Network linux commands](#network-linux-commands)
-  - [man page](#man-page)
+- [Linux Commands](#linux-commands) 🐧
+  - [Useful Linux commands](#useful-linux-commands) 🚀
+  - [Linux Files Types](#linux-files-types) 📂
+  - [Terminal](#terminal) 💻
+  - [File Navigation System](#file-navigation-system) 🗂️
+  - [Linux sub directories](#linux-sub-directories) 📁
+  - [ls command and its options](#ls-command-and-its-options) 📜
+  - [Creation of directories](#creation-of-directories) 📁
+  - [Removing directories rm and rmdir commands](#removing-directories-rm-and-rmdir-commands) 🗑️
+  - [Copying moving and renaming files and directories](#copying-moving-and-renaiming-files-and-directories) 🔄
+  - [Creation of files using cat touch gedit and vi](#creation-of-files-using-cat-touch-gedit-and-vi) 📝
+  - [View files contents using cat tac rev head and tail](#view-files-contents-using-cat-tac-rev-head-and-tail) 👀
+  - [View files content using less and more](#view-files-content-using-less-and-more) 📖
+  - [Creation of hidden files and directories](#creation-of-hidden-files-and-directories) 🔍
+  - [Copying moving and renaming files and directories using cp and mv commands (2)](#copying-moving-and-renaiming-files-and-directories-using-cp-and-mv-commands-2) 🔄
+  - [Comparing content of files (diff sdiff...)](#comparing-content-of-files-diff-sdiff) ↔️
+  - [Soft and hard link](#soft-and-hard-link) 🔗
+  - [Sort commands](#sort-commands) 🔄
+  - [Uniq commands](#uniq-commands) 🚫
+  - [Input and Output](#input-and-output) ⬅️ ➡️
+  - [Redirecting stdInput stdOutput and stdError](#redirecting-stdinput-stdoutput-and-stderror) 🔄
+  - [Piping](#piping) ⤴️
+  - [Execute multiple command](#execute-multiple-command) ⚙️
+  - [Commands aliasing](#commands-aliasing) 🔄
+  - [Regular expressions](#regular-expressions) 🧠
+  - [locate](#locate) 🔍
+  - [find command](#find-command) 🔍
+  - [Compression and uncompression of files (episode 33)](#compression-and-uncompression-of-files-episode-33) 📦
+      - [Creation of archive files](#creation-of-archive-files) 📦
+      - [Apply compression algorithm on archive files (gzip bzip2)](#apply-compression-algorithm-on-archive-files-gzip-bzip2) 🗜️
+  - [grep command](#grep-command) 🔍
+  - [Regular expressions patterns](#regular-expressions-patterns) 🧠
+      - [Character Patterns](#character-patterns) 🆎
+      - [Word Patterns](#word-patterns) 📝
+      - [Line Patterns](#line-patterns) ⏩
+      - [Additional Patterns available only when using the egrep command](#additional-patterns-available-only-when-using-the-egrep-command) 🧠
+  - [The cut command](#the-cut-command) ✂️
+  - [The Linux File Permissions Concept](#the-linux-file-permissions-concept) 🔒
+      - [User categories](#user-categories) 👥
+      - [Permission types](#permission-types) 🔐
+      - [Operations allowed related permissions](#operations-allowed-related-permissions) 🛠️
+      - [Users and groups](#users-and-groups) 👥
+      - [Umask](#umask) 🔒
+  - [Working with editors](#working-with-editors) 📝
+  - [Stackoverflow questions](#stackoverflow-questions) 🤔
+  - [Checking Resource Usage](#checking-resource-usage) ⚙️
+  - [Managing systemd units](#managing-systemd-units) ⚙️
+  - [Viewing Logs](#viewing-logs) 📜
+  - [Managing users](#managing-users) 👥
+  - [SSH](#ssh) 🔒
+  - [Bash history](#bash-history) 🕰️
+  - [Network linux commands](#network-linux-commands) 🌐
+  - [man page](#man-page) 📖
 
 <!--
 - [Shell scripting](#shell-scripting)
@@ -92,7 +92,8 @@
         - [Varibale scopes](#varibale-scopes)
         - [Return statement](#return-statement)
         - [break vs exit vs return](#break-vs-exit-vs-return)
-        - [How to call functions present in another script](#how-to-call-functions-present-in-another-script) -->
+        - [How to call functions present in another script](#how-to-call-functions-present-in-another-script) 
+-->
 
 # Linux Commands
 ## Help
@@ -121,12 +122,14 @@
 - Display time: `time`
 - Print information: `hello`
 - Increase the font size: `Ctrl, shift and +`
-<!-- - Print 5 random numbers between 1 and 100: `shuf -i 1-100 -n 5`-->
-<!--- Creating file using the `shuf` command: `touch dir$(shuf -i 1-10 -n 1)/sunny.txt ` -->
 - Simple user: `$ prompt`
 - Root user/admin: `# prompt`
 - Switch from simple user to root user: `sudo -i`
 - Switch from root to simple user:  `exit`
+<!-- 
+- Print 5 random numbers between 1 and 100: `shuf -i 1-100 -n 5`
+- Creating file using the `shuf` command: `touch dir$(shuf -i 1-10 -n 1)/sunny.txt ` 
+-->
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
@@ -138,11 +141,17 @@ Linux has the following file types:
 - Device file: every device is represented as a file
 - To show the type of a file, use the command file file.txt. Linux reads files based on their content and not based on their extensions.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Terminal:
-- To open the terminal, use the shortcut ctrl + alt + t
-- To close the terminal, use ctrl + d
+- To open the terminal, use the shortcut `ctrl + alt + t`
+- To close the terminal, use `ctrl + d`
+<!-- 
 - To show the file that represents the current terminal, use the command tty, which will output the file path, e.g. /dev/pts/0
-- To show files in the current directory, use the command ls -l, where -l means long listing."
+- To show files in the current directory, use the command ls -l, where -l means long listing." 
+-->
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## File Navigation System
 
@@ -151,6 +160,8 @@ Linux has the following file types:
 - Go directly to the home directory: `cd` or `cd ~`
 - Go to the previous directory: `cd -`
 - `/` is the topmost root.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Linux sub directories
 
@@ -169,6 +180,8 @@ Linux has the following file types:
 - proc: proc means process, for each process a unique id is allocated, and a separate directory will be created inside the proc folder.
 - boot directory: it contains the required files to boot the linux system.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## ls command and its options
 
 - List all files and directories of the directory dir1: `ls dir1`
@@ -178,13 +191,19 @@ Linux has the following file types:
 - List content based on creation time: `ls -t`
 - Possibility to combine all the above options: `ls -ltr`
 - List also the hidden files: `ls -a`
-- List contents by type: `ls -F` (/, *, @)
-- List contents recursively: `ls -R`
-- List contents with total size(1 block = 1024kb): `ls -s`
+- List information about the directory itself, rather than its contents: `ls -d`
+- List detailed information (more details on the directory) about the directory itself, rather than its contents: `ls -ld`
+- List contents with total size and the individual files, subdirectories along with their respective sizes(1 block = 1024kb): `ls -s`
 - List contents of the top 10 entries: `ls -l /dir | head`
 - List contents of the top 5 entries: `ls -l /dir | head -5`
 - List contents of the bottom 10 entries: `ls -l /dir | tail`
 - List contents page by page: `ls -l /dir | more` or `ls -l /dir | less`, less is more powerful(forward and backward direction).
+<!-- 
+- List contents by type: `ls -F` (/, *, @)
+- List contents recursively: `ls -R` 
+-->
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Creation of directories
 
@@ -193,6 +212,8 @@ Linux has the following file types:
 - To create multiple directories from the same pwd: `mkdir -p dir1/dir2/dir3`. `dir1, dir2` will be created only if they don't exist already.
 - To create multiple directories `mkdir -p dir1/dir2{dir3-1,dir3-2,dir3-3}/dir{1..31}`, every dir3-x will contains 31 directories.
 - Show directory content as a tree data structure:  `tree`
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Removing directories rm and rmdir commands
 - To remove directories: `rmdir dir1 dir2` (rmdir removes only directories, no file will be deleted, and it will works only if the directories are empty).
