@@ -1,5 +1,8 @@
-## Introduction
-This repository contains my personal notes on the [linux commands with shell programming](https://www.durgasoftonline.com/s/store/courses/description/Linux-with-Shell-ProgrammingSEDAWK-and-many-more) course given by sir Durga. This repository is not intended to explain the Linux operating system, but it can be very useful as a reminder of how a specific Linux command works. In the first part of this repository, you can find good examples of almost everything related to linux commands, in the second part you will find everything related to shell programming. 
+# LinuxToolkit-24
+
+### Table of Contents
+
+---
 
 - [Linux Commands](#linux-commands)
   - [Useful Linux commands](#useful-linux-commands)
@@ -55,7 +58,7 @@ This repository contains my personal notes on the [linux commands with shell pro
   - [Network linux commands](#network-linux-commands)
   - [man page](#man-page)
 
-
+<!--
 - [Shell scripting](#shell-scripting)
   - [What is Shell?](#what-is-shell)
   - [Types of Shell?](#types-of-shell)
@@ -89,7 +92,7 @@ This repository contains my personal notes on the [linux commands with shell pro
         - [Varibale scopes](#varibale-scopes)
         - [Return statement](#return-statement)
         - [break vs exit vs return](#break-vs-exit-vs-return)
-        - [How to call functions present in another script](#how-to-call-functions-present-in-another-script)
+        - [How to call functions present in another script](#how-to-call-functions-present-in-another-script) -->
 
 # Linux Commands
 ## Help
@@ -118,12 +121,14 @@ This repository contains my personal notes on the [linux commands with shell pro
 - Display time: `time`
 - Print information: `hello`
 - Increase the font size: `Ctrl, shift and +`
-- Print 5 random numbers between 1 and 100: `shuf -i 1-100 -n 5`
-- Creating file using the `shuf` command: `touch dir$(shuf -i 1-10 -n 1)/sunny.txt `
+<!-- - Print 5 random numbers between 1 and 100: `shuf -i 1-100 -n 5`-->
+<!--- Creating file using the `shuf` command: `touch dir$(shuf -i 1-10 -n 1)/sunny.txt ` -->
 - Simple user: `$ prompt`
 - Root user/admin: `# prompt`
 - Switch from simple user to root user: `sudo -i`
 - Switch from root to simple user:  `exit`
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Linux Files Types
 
