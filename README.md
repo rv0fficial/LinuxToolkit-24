@@ -14,7 +14,7 @@
   - [File Navigation System](#file-navigation-system) 🗂️
   - [Linux sub directories](#linux-sub-directories) 📁
   - [ls command and its options](#ls-command-and-its-options) 📜
-  - [Creation of directories](#creation-of-directories) 📁
+  - [Creation of directories](#creation-of-directories) 🛠️📁
   - [Removing directories rm and rmdir commands](#removing-directories-rm-and-rmdir-commands) 🗑️
   - [Copying moving and renaming files and directories](#copying-moving-and-renaiming-files-and-directories) 🔄
   - [Creation of files using cat touch gedit and vi](#creation-of-files-using-cat-touch-gedit-and-vi) 📝
@@ -220,18 +220,21 @@ Linux has the following file types:
 
 - To create a directory in the same pwd: `mkdir directoryName`
 - To create multiple directories in the same pwd: `mkdir dir1 dir2 dir3`
-- To create multiple directories from the same pwd: `mkdir -p dir1/dir2/dir3`. `dir1, dir2` will be created only if they don't exist already.
+- To create multiple directories from the same pwd: `mkdir -p dir1/dir2/dir3`. `dir1, dir2` will be created only if they don't exist already (the `-p` option ensures that).
 - To create multiple directories `mkdir -p dir1/dir2{dir3-1,dir3-2,dir3-3}/dir{1..31}`, every dir3-x will contains 31 directories.
-- Show directory content as a tree data structure:  `tree`
+- Show directory content as a tree data structure `tree`, This command might not be installed by default `sudo yum install tree`.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Removing directories rm and rmdir commands
 - To remove directories: `rmdir dir1 dir2` (rmdir removes only directories, no file will be deleted, and it will works only if the directories are empty).
-- To remove directories: `rm -r dir1`, or `rm -R dir1`. For files no need to the `-r` option, `-r` for recursive operations.
+- To remove directories: `rm -r dir1`, or `rm -R dir1`. For files no need to the `-r` option, `-r` for recursive operations
+  (Removes a directory and all of its contents, including subdirectories).
 - To get confirmation before deleting the contents: `rm -r -i dir1`
 - Force removal `-f`: `rm -rf dir1`
 - Verbose option `-v`: `rm -rv dir1`, to print the flow of the deletion process.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Copying moving and renaiming files and directories
 - To copy file content from one file to another: ```cp a.txt b.txt```, if ```b.txt``` doesn't exist, a new file will be created, if it already exists, the file will be overwritten. ```cp a.txt home/anotherDirectory/c.txt``` to copy content to another destination.
@@ -240,12 +243,15 @@ Linux has the following file types:
 - Renaming a file: ```mv a.txt b.txt```, to rename a directory ```mv dir1 dir2```, if ```dir2``` already exists, ```dir1``` wil be moved inside ```dir2```
 - Moving files from one directory to another: ```mv dir1/* dir2```, ```mv a.txt b.txt dir2```
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Creation of files using cat touch gedit and vi
 - Using the cat command: ```cat > a.txt```, a possibility to write content on the a.txt file, ctrl+c to save and exit, if the file is already available, the data will be overwritten, to perform append operation, ```cat >> a.txt```
 - Using the touch command: ```touch b.txt```, a new empty file will be created, if the file is already available, the data will be not be overwritten, only the last date of modification will be modified.
 - Using the gedit command: ```gedit c.txt```, ctr+s to save, ctrl+q to quit the graphical editor.
 - Using vi editor: ```gedit d.txt```, press i to enter the insert mode, press esc key, :wq to save and quit the editor. vim is an advanced version of the vi editor.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## View files contents using cat tac rev head and tail
 - View content using cat command:  ```cat < a.txt```, where ```<``` symbol is optional. ```-n``` option to display line numbers, ```-n``` to skip blank lines numbering. ```cat a.txt b.txt``` will print the content of the two passed files.
@@ -261,9 +267,13 @@ Linux has the following file types:
 - To view specified lines from the bottom of a file: ```tail a.txt``` last 10 lines, last 5 lines ```tail -n 5 a.txt```, abbreviation: ```tail -5 a.txt```, ```tail -c 100 a.txt``` will print the last ```100``` characters.
 - To view content from line 3 to line 7 using piping: ```head -7 a.txt | tail -5```
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## View files content using less and more
 - To view file content page per page:  ```more a.txt```, press ```enter``` to display next line, press ```space bar``` to display the next page, press ```q``` to exit, ```more -d a.txt``` to display more info about the file. By using more command, we can view file content page per page only in forward direction.
 - To view file content page per page either in forward direction or backward direction: ```less a.txt```, press ```d``` to display the next page (d means down),  press ```b``` to display the previous page (b means backward).
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Creation of hidden files and directories
 - If any file name starts with ```.```, such file is a hidden file.
