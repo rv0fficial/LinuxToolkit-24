@@ -7,7 +7,9 @@
 - [Linux Commands](#linux-commands) 🐧
   - [Useful Linux commands](#useful-linux-commands) 🚀
   - [Linux Files Types](#linux-files-types) 📂
+  <!--
   - [Terminal](#terminal) 💻
+  -->
   - [File Paths](#file-paths)👣
   - [File Navigation System](#file-navigation-system) 🗂️
   - [Linux sub directories](#linux-sub-directories) 📁
@@ -143,16 +145,15 @@ Linux has the following file types:
 - To show the type of a file, use the command file file.txt. Linux reads files based on their content and not based on their extensions.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
-
+<!--
 ## Terminal:
 - To open the terminal, use the shortcut `ctrl + alt + t`
 - To close the terminal, use `ctrl + d`
-<!-- 
 - To show the file that represents the current terminal, use the command tty, which will output the file path, e.g. /dev/pts/0
 - To show files in the current directory, use the command ls -l, where -l means long listing." 
--->
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
+-->
 
 ## File Paths
 - Absolute Path: Specifies the complete and exact location of a file or directory in the file system. 
@@ -167,7 +168,8 @@ Linux has the following file types:
 - Display hidden files: `ls -a`  `-a` means all.
 - Home directory: `/home/user1`, `/home` contains the home users directories.
 - Go directly to the home directory: `cd` or `cd ~`
-- Go to the previous directory: `cd -`
+- switches between the current and previous directories (go back & forth): `cd -`
+- Always moves up one level to the parent directory (Only go back from the pwd): `cd ..`
 - `/` is the topmost root.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
