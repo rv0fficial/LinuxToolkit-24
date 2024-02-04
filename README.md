@@ -8,6 +8,7 @@
   - [Useful Linux commands](#useful-linux-commands) 🚀
   - [Linux Files Types](#linux-files-types) 📂
   - [Terminal](#terminal) 💻
+  - [File Paths](#file-paths)👣
   - [File Navigation System](#file-navigation-system) 🗂️
   - [Linux sub directories](#linux-sub-directories) 📁
   - [ls command and its options](#ls-command-and-its-options) 📜
@@ -150,6 +151,14 @@ Linux has the following file types:
 - To show the file that represents the current terminal, use the command tty, which will output the file path, e.g. /dev/pts/0
 - To show files in the current directory, use the command ls -l, where -l means long listing." 
 -->
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
+## File Paths
+- Absolute Path: Specifies the complete and exact location of a file or directory in the file system. 
+  Starts from the root directory ("/" in Unix-based systems).
+- Relative Path: Specifies the location of a file or directory respect to the current working directory. 
+  Does not start from the root directory.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
