@@ -231,7 +231,7 @@ Linux has the following file types:
 - To remove directories: `rm -r dir1`, or `rm -R dir1`. For files no need to the `-r` option, `-r` for recursive operations
   (Removes a directory and all of its contents, including subdirectories).
 - To get confirmation before deleting the contents: `rm -r -i dir1`
-- Force removal `-f`: `rm -rf dir1`
+- Force removal without prompting for confirmation `-f`: `rm -rf dir1`
 - Verbose option `-v`: `rm -rv dir1`, to print the flow of the deletion process.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
