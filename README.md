@@ -236,8 +236,8 @@ Linux has the following file types:
   - Delete selected lines: Press `d`
 
 **Undo & Redo:**
-    - Undo last change: Press `u`
-    - Redo last undone change: Press `Ctrl` + `r`
+  - Undo last change: Press `u`
+  - Redo last undone change: Press `Ctrl` + `r`
 
 **Search in Vim**
   - Enter command-line mode: Press `Shift` + `:`
@@ -336,6 +336,8 @@ Linux has the following file types:
 - Create hidden directories: ```mkdir .dir1```
 - Conversion of Normal/hidden files: using renaiming operation, ```mv .a.txt a.txt```
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Copying moving and renaiming files and directories using cp and mv commands (2)
 - ```cp a.txt b.txt```, if b.txt exists, its content will be overwritten directly, to get confirmation message, ```cp -i a.txt b.txt```
 - Copy multiple files content to one destination file: ```cat a.txt b.txt > c.txt```
@@ -345,6 +347,7 @@ Linux has the following file types:
 - Moving all files of one directory to another directory: ```mv dir1/* dir2```
 - Moving using absolute path:  ```mv ~/dir1/* ~/dir2```, ```~/dir2``` equivalent to ```/home/userName/dir2```
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Comparing content of files (diff sdiff...)
 - ```cmp``` command: comparing files byte by byte, ```cmp file1.txt file2.txt```, if the files content are the same, no output, otherwise information about the first found difference, byte number and line number will be shown.
@@ -354,13 +357,19 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 - ```sdiff``` command: all differences in a parallel comparison.
 - ```vimdiff``` command: advanced tool to show the differences, it will highlight all differences in a vim editor, ```sudo apt-get install vim``` to install the tool, two windows will be shown, ```ctrl+w+w``` to go to the other window, ```:q``` to close current window, ```:qa``` to close all windows, ```:qai``` close and ignore all changes. 
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ##  Soft and hard link
 - In Windows, we have only soft link files (shortcut|raccourci), in linux we have also hard link files.
 - Hard link file is just another name of the same file. We can create hard link files using the following command ```ln sourcefile.txt hardlinkfile.txt```
 - If we deleted the source file, the hard link file wil still exists. If we modify the content of the (sourcefile|link hard file), the update will be reflected also in the (sourcefile|link hard file).
 - Soft link file is just a shortcut of the original file (same as windows). If we delete the original file, the soft link file will be broken. We can create soft link files using the following command ```ln -s sourcefile.txt softlinkfile.txt```
 - Change made in the original file will also be reflected to the Soft link file.
-- For directories, it is not possible to create hard link. 
+- For directories, it is not possible to create hard link.
+- Eg: `ln -s /opt/dev/ops/devops/test/file.txt cmda`, creates a symbolic link named "cmda" that points to the file "/opt/dev/ops/devops/test/file.txt."
+- To remove the link: `rm cmda` or `unlink cmda`
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Sort commands 
 - Sort command, to sort files content line by line in an alphabetical order: ```sort a.txt``` will only print the sorted order. ```sort a.txt > b.txt``` will redirect the sorted order output to the new file. ```sort a.txt > temp.txt``` and ```mv temp.txt > a.txt``` will make change on the same source file.
@@ -370,6 +379,8 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 - If we want to sort based on numerical values: ```sort -n a.txt```, ```sort -nr a.txt```
 - Sort based on the column line number:  ``` ls etc/ -l | head -7 | sort -rk 5``` will show the info of the top 7 files in etc folder and will sort them recursively based on the fifth column (length of file).
 - Sort based on the column lines in a file composed by lines in the following format ```token1:token2:token3```, ```:``` is called a separator. To sort such file: ```sort -k 3 -t ":" a.txt```
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Uniq commands
 - Find unique content ```sort -u a.txt```, but uniq command is more powerful, ```uniq a.txt``` works only on sorted files, ```sort a.txt | uniq```.
