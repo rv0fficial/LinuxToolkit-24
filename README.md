@@ -193,6 +193,57 @@ Linux has the following file types:
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
+## Vim Editor
+   - Installation Command: `sudo yum install vim`
+   - To open a new shell with elevated privileges: `sudo -i`
+
+**Vim Editing Shortcuts**
+   - Open a file: `vim <file name>`
+   - Display line numbers: Press `Shift` + `:` and type "se nu"
+   - Go to the bottom line: Press `Shift` + `g`
+   - Go to the top line: Press `gg`
+
+**Copy and Paste in Vim**
+   - Open a file
+   - Copy multiple lines:
+      - Enter visual mode: Press `v`
+      - Select lines
+      - Yank (copy) lines: Press `y`
+   - Paste lines: Move cursor, then
+      - Paste after cursor: Press `p`
+      - Paste before cursor: Press `P`
+**Cut and Paste in Vim**
+   - Open a file
+   - Copy multiple lines:
+      - Enter visual mode: Press `v`
+      - Select lines
+      - Cut lines: Press `d`
+   - Paste lines: Move cursor, then
+      - Paste after cursor: Press `p`
+      - Paste before cursor: Press `P`
+
+**Delete Character by Character in Vim**
+  - Move the cursor to the left side position of where you want to start deletion.
+  - Delete character: Press `x`
+  - Delete multiple characters: e.g., `3x` deletes three characters
+**Delete Multiple Lines in Vim**
+  - Move cursor to the first line to delete.
+  - Enter visual line mode: Press `V`
+  - Select lines.
+  - Delete selected lines: Press `d`
+
+**Undo & Redo:**
+    - Undo last change: Press `u`
+    - Redo last undone change: Press `Ctrl` + `r`
+
+**Search in Vim**
+  - Enter command-line mode: Press `Shift` + `:`
+  - Type search command: e.g., `:/example`
+  - Press Enter to execute search.
+  - Navigate matches: Press `n` (next) or `N` (previous).
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## ls command and its options
 
 - List all files and directories of the directory dir1: `ls dir1`
@@ -249,7 +300,7 @@ Linux has the following file types:
 - Using the cat command: ```cat > a.txt```, a possibility to write content on the a.txt file, ctrl+c to save and exit, if the file is already available, the data will be overwritten, to perform append operation, ```cat >> a.txt```
 - Using the touch command: ```touch b.txt```, a new empty file will be created, if the file is already available, the data will be not be overwritten, only the last date of modification will be modified.
 - Using the gedit command: ```gedit c.txt```, ctr+s to save, ctrl+q to quit the graphical editor.
-- Using vi editor: ```gedit d.txt```, press i to enter the insert mode, press esc key, :wq to save and quit the editor. vim is an advanced version of the vi editor.
+- Using vi editor: ```vim d.txt```, press i to enter the insert mode, press esc key, :wq to save and quit the editor. vim is an advanced version of the vi editor.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
