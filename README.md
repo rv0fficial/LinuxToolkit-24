@@ -389,7 +389,9 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
   - ```-c```: to display numbers of occurrences of each line.
   - ```-i```: to ignore case while comparing.
   - ```-u```: to display ony unique lines.
-  
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Input and Output
 - command take some input and produces some output:  
   - Input in two forms: stdin or command line argument, stdin example: `echo "hello" >> file.txt`,  command line argument example:  `touch file.txt`
@@ -398,6 +400,8 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
     - stdIn associated with the number 0, by default it is connected with the keyboard.
     - stdOutput associated with the number 1, connected with the terminal.
     - stdError associated with the number 2, connected with the terminal.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Redirecting stdInput stdOutput and stdError
 - Redirecting stdOutput: We can perform redirection using `>` and `>>`, `cat 1> output.txt`
@@ -409,6 +413,8 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
     - `cat <a.txt &>copy.txt`, means either output or error direction to the copy.txt file.
     - Redirect the documentation content of the ls command to some output file:  ```man ls > newfile.txt```.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Piping  
 - `ls -l /etc | more`, the output of the first command will be the input of the second command.
 - `ls -l /etc > somefile.txt | more`, no piping because the redirection symbol breaks the piping.
@@ -416,10 +422,14 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 - `rm` command can't take data stream as input, but can only get arguments from the command line terminal, for that purpose, the command `xargs` can be used to converts data stream to arguments. Example: `cat /etc | xargs rm`
 - pipe symbol `|` can be used to link two commands, `>` is useful when redirecting the output to another place.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Execute multiple command
 - `ls -l /etc | more`: the preceding commands are dependent commands, to run multiple independent commands in one line, we can use the `;` symbol or by using `&&`.
 - By using `;`: e.g. `cmd1;cmd2;cmd3`, if `cmd2` fails, `cmd3` will be executed.
 - By using `&&`: e.g. `cmd1&&cmd2&&cmd3`, if `cmd2` fails, `cmd3` will not be executed.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Commands aliasing
 - Aliases are nicknames given to a given command.
@@ -429,7 +439,9 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 - Aliases are temporary unless we persist them permanently: 
     - Editing the .bashrc file, It could be found inside the user home directory.
     - Create our new aliasing file, the name of the file should be .bash_aliases and should be located in the user home directory.
-    
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Regular expressions
 - If we want to represent a collection of strings according to a particular pattern, then we should go for 
 Regular expressions.
@@ -448,12 +460,16 @@ Regular expressions.
     - `ls [abc]*`: aaaaaa, bbbb, ....
     - `ls [!abc]*`: should not start with a, b  or c.
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## locate
 - We can use locate to locate files and directories in our system.
 - `locate file.txt`, `locate *.txt`: to locate the given entries, locate command look in a database to locate the given entries, the database is updated only one time a day, so to update the database we should use the following command: `sudo updatedb`
 - `locate -S`: to get the statistics of the database, `locate -i FilE.txt` to ignore case sensitivity. `locate --limit 5 a.txt` to limit the search to 5 entries.
 - `locate --existing b.jpeg`, or with `-e` option: check if the given file exist or not.
 - Advantage of using a database is related to performance.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## find command
 - It provides more search option comparing to the locate command. contrary to the locate command, the find command will search directly in the file system.
@@ -467,12 +483,16 @@ Regular expressions.
 - `find . -type f -name d?.*`: look for files inside the current directory and below with the given name that match given regular expression, `-iname` option to ignore case.
 - `find . -type f -size +200k`: look for files that have size greater than 200 kbytes, `-size -200k` for less than, `-size 100k` for equality size. 
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## Compression and uncompression of files (episode 33)
 #### Creation of archive files
 - `tar` command: tape archive, to group multiple files and directories into a single archive, `tar -cvf demo.tar file1 file2 dir1`, `-c` create, `-v` verbose,`-f` named file.
 - `tar -tvf demo.tar`: print table of content of the tar file.
 - `tar -xvf demo.tar`: extract the given tar file.
 - `tar -tvzf demo.tgz file1 file2`: will compress and zip the given files.
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 #### Apply compression algorithm on archive files (gzip bzip2)
 - `gzip demo.tar`: To compress a given file, `demo.tar.gz` will be created.
@@ -481,12 +501,16 @@ Regular expressions.
 - Archiving and compressing (`gzip`) in one command: using the `-z` option, `tar -czvf demo.tar file1 file2 dir1`
 - Decompressing (`gunzip`) and extracting the archive in one command: using the `-x` option, `tar -xvzf demo.tar.gz`
 
+**[⬆ Only Up! 🏃](#table-of-contents)**
+
 ## grep command
 - Globally search a regular expression and print it, global regular expression print, global regular expression parser.
 - `locate` and `find` help to find required files and directories, `grep` command help to find content within the file.
 - Syntax: `grep <pattern> filname`, and it will print all matched lines.
 - `grep someword filname1.txt filname2.txt`: look for the pattern in the given files.
-- `grep someword *`: look for the pattern in the current directory and not in the sub-directories, to ignore case we should use the `-i` option, `--color` to display the result in a colored form. 
+- `grep someword *`: look for the pattern in the current directory and not in the sub-directories.
+- `grep someword -R *`: to perform a recursive search (in the current directory and it's sub-directories).
+- `grep someword -i *`: to ignore case (case-insensitive matching), `--color` to display the result in a colored form. 
 - `grep someword -c *`: to print how much time the pattern is found.
 - `grep someword -n *`: to print the lines number where the pattern is found. 
 - `grep someword -l *`: to print only the file names where the pattern is found. 
@@ -496,6 +520,9 @@ Regular expressions.
 - Search multiple contents in a file: `egrep '(word1|word2)' *`, `grep` can understand only some patterns; for this reason we use `egrep`
 - `grep -o 'word1' *`: will print only matched pattern.
 - `egrep -R '(word1|word2)' *`: will execute recursively, it means also checking the sub-directories.
+- You can search for a sentence in files, eg: `grep "This is a sentence I want to search for" file.txt`
+
+**[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## Regular expressions patterns
 #### Character Patterns
