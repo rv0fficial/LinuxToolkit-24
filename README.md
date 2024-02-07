@@ -324,8 +324,10 @@ Linux has the following file types:
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## View files content using less and more
-- To view file content page per page:  ```more a.txt```, press ```enter``` to display next line, press ```space bar``` to display the next page, press ```q``` to exit, ```more -d a.txt``` to display more info about the file. By using more command, we can view file content page per page only in forward direction.
-- To view file content page per page either in forward direction or backward direction: ```less a.txt```, press ```d``` to display the next page (d means down),  press ```b``` to display the previous page (b means backward).
+- **To view file content page per page**:  ```more a.txt```, press ```enter``` to display next line, press ```space bar``` to display the next page,
+  press ```q``` to exit, ```more -d a.txt``` to display more info about the file. By using more command, we can view file content page per page only in forward direction.
+- **To view file content page per page either in forward direction or backward direction**: ```less a.txt```, press ```d``` to display the next page (d means down),
+  press ```b``` to display the previous page (b means backward).
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
