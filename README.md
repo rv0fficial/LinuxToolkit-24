@@ -13,6 +13,7 @@
   - [File Paths](#file-paths)👣
   - [File Navigation System](#file-navigation-system) 🗂️
   - [Linux sub directories](#linux-sub-directories) 📁
+  - [Vim Editor](#vim-editor) 🎬
   - [ls command and its options](#ls-command-and-its-options) 📜
   - [Creation of directories](#creation-of-directories) 🛠️📁
   - [Removing directories rm and rmdir commands](#removing-directories-rm-and-rmdir-commands) 🗑️
@@ -212,6 +213,7 @@ Linux has the following file types:
    - Paste lines: Move cursor, then
       - Paste after cursor: Press `p`
       - Paste before cursor: Press `P`
+
 **Cut and Paste in Vim**
    - Open a file
    - Copy multiple lines:
@@ -226,6 +228,7 @@ Linux has the following file types:
   - Move the cursor to the left side position of where you want to start deletion.
   - Delete character: Press `x`
   - Delete multiple characters: e.g., `3x` deletes three characters
+
 **Delete Multiple Lines in Vim**
   - Move cursor to the first line to delete.
   - Enter visual line mode: Press `V`
