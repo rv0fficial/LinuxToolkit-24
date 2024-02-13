@@ -245,6 +245,11 @@ Linux has the following file types:
   - Press Enter to execute search.
   - Navigate matches: Press `n` (next) or `N` (previous).
 
+**Replacement in Vim**
+  - Enter command-line mode: Press `Shift` + `:`
+  - To replace text, use the command: `:%s/search_text/replacement_text/`
+  - To replace all occurrences on each line, add the `g` flag at the end of the command: `:%s/search_text/replacement_text/g`
+
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
 ## ls command and its options
