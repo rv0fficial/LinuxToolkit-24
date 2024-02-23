@@ -412,6 +412,8 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 
 ## Redirecting stdInput stdOutput and stdError
 - Redirecting stdOutput: We can perform redirection using `>` and `>>`, `cat 1> output.txt`
+- `>`: redirection operator in a command, it redirects the output of the command to a file, overwriting the file's existing content, if any.
+- `>>`: It is used to append the output of a command to the end of a file instead of overwriting it.
 - Redirecting standard error: Instead of terminal we can redirect messages from terminal to another place, a file as an example. `cal jkbjkcabjkac 2> log.txt`, 2 stands for stdError.
 - Redirecting standard input: we can use the `<` symbol to perform input redirection, `cat 0< a.txt`, 0 is optional.
 - Examples:
