@@ -121,7 +121,7 @@
 - Remove a directory and its content: `rm -r directoryname`
 - Display list of available commands: `help`
 - Clear terminal: `clear`, `ctrl+l`
-- Exit session: ``exit`
+- Exit session: `exit`
 - Display date: `date`
 - Display time: `time`
 - Print information: `hello`
@@ -172,6 +172,8 @@ Linux has the following file types:
 - switches between the current and previous directories (go back & forth): `cd -`
 - Always moves up one level to the parent directory (Only go back from the pwd): `cd ..`
 - `/` is the topmost root.
+- `.` represents the current directory.
+- `~` represents the home directory of the current user.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
@@ -492,7 +494,10 @@ Regular expressions.
 - `find -type f`: will limit the search to the files.
 - `find -type d`: will limit the search to the directories.
 - `find . -type f -name d?.*`: look for files inside the current directory and below with the given name that match given regular expression, `-iname` option to ignore case.
-- `find . -type f -size +200k`: look for files that have size greater than 200 kbytes, `-size -200k` for less than, `-size 100k` for equality size. 
+- `find . -type f -size +200k`: look for files that have size greater than 200 kbytes, `-size -200k` for less than, `-size 100k` for equality size.
+- Examples:
+    - `find /etc -name host*`
+  
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
