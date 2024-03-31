@@ -419,12 +419,14 @@ Example:  ```echo "hello" >> file1.txt```, ```echo "hello2" >> file2.txt```, ```
 - Examples:
     - `cat 0<a.txt 1>copy.txt 2>error.txt`
     - `cat <a.txt >copy.txt 2>error.txt`
-    - `cat <a.txt &>copy.txt`, means either output or error direction to the copy.txt file.
+    - `cat <a.txt &>copy.txt`, means either output or error direction to the copy.txt file (‘&’ Redirects both standard output
+      and standard error to the same location).
     - Redirect the documentation content of the ls command to some output file:  ```man ls > newfile.txt```.
 
 **[⬆ Only Up! 🏃](#table-of-contents)**
 
-## Piping  
+## Piping
+- `|`: Pipe operator, Takes the output of the command on the left and uses it as input for the command on the right.
 - `ls -l /etc | more`, the output of the first command will be the input of the second command.
 - `ls -l /etc > somefile.txt | more`, no piping because the redirection symbol breaks the piping.
 - `tee` command: if we want to save the output of intermediate command and want to pass that output as input to next command, `ls -l /etc tee somefile.txt | more`
